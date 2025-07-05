@@ -20,6 +20,9 @@ import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 
 const App = () => {
+  // ✅ Check if .env is loading correctly
+  console.log("ENV CHECK:", import.meta.env.VITE_APPWRITE_ENDPOINT);
+
   return (
     <main className="flex h-screen">
       <Routes>
